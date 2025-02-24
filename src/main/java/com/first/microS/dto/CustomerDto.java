@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 public class CustomerDto {
-    private String CUST_NAME;
-    private String CUST_ADDRESS;
-    private String CUST_EMAIL;
-    private String CUST_PHONE;
+    private String customerName;
+    private String customerAddress;
+    private String customerEmail;
+    private String customerPhone;
 }

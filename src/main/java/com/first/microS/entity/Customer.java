@@ -15,13 +15,13 @@ import lombok.Setter;
 public class Customer  extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long CUST_ID;
+    private Long customerId;
     @Column(nullable = false)
-    private String CUST_NAME;
+    private String customerName;
     @Column(nullable = false)
-    private String CUST_ADDRESS;
+    private String customerAddress;
     @Column(nullable = false)
-    private String CUST_EMAIL;
+    private String customerEmail;
     @Column(nullable = false)
-    private String CUST_PHONE;
+    private String customerPhone;
 }

@@ -21,7 +21,7 @@ public class Accounts extends BaseEntity{
     private Long cust_id;
     @Id
     @Column(nullable = false)
-    private String account_no;
+    private Long account_no;
     @Column(nullable = false)
     private String account_type;
     @Column(nullable = false)

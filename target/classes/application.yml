@@ -3,17 +3,11 @@ server:
 
 spring:
     datasource:
-        url: jdbc:oracle:thin:@los-ml.cdcr41rkqhvy.ap-south-1.rds.amazonaws.com:1521/ORCL
-        username: SERVOML
-        password: Am!t76#20Put$
-        driver-class-name: oracle.jdbc.OracleDriver
+        url: jdbc:mysql://localhost:3306/amitdb
+        username: root
+        password: #Am!t$1212
+        driver-class-name: com.mysql.cj.jdbc.Driver
 
     jpa:
-        datasource-platform: org.hibernate.dialect.OracleDialect
-        hibernate:
-            ddl-auto: update
-            show-sql: true
-    h2:
-        console:
-            enabled: true
+        database-platform: org.hibernate.dialect.MySQLDialect
 
