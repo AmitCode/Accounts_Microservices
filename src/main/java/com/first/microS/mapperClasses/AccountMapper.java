@@ -12,6 +12,7 @@ public class AccountMapper {
      */
     public static AccountsDto mapEntityToDto(Accounts accounts){
         AccountsDto accountsDto = new AccountsDto();
+        accountsDto.setCustomerId(accounts.getCustomerId());
         accountsDto.setAccount_no(accounts.getAccount_no());
         accountsDto.setAccount_type(accounts.getAccount_type());
         accountsDto.setAccount_status(accounts.getAccount_status());
@@ -28,6 +29,7 @@ public class AccountMapper {
      */
     public static Accounts mapDtoToEntity(AccountsDto accountsDto){
         Accounts accounts = new Accounts();
+        accounts.setCustomerId(accountsDto.getCustomerId());
         accounts.setAccount_no(accountsDto.getAccount_no());
         accounts.setAccount_type(accountsDto.getAccount_type());
         accounts.setAccount_status(accountsDto.getAccount_status());

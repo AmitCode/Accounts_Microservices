@@ -10,4 +10,6 @@ public interface AccountService {
      * @param customerDto the customer for whom the account will be created
      */
     public void createAccount(CustomerDto customerDto);
+    public CustomerDto getCustomerDtsByPhone(String customerPhone);
+    public boolean updateAccount(CustomerDto customerDto);
 }

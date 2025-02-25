@@ -9,4 +9,5 @@ public class CustomerDto {
     private String customerAddress;
     private String customerEmail;
     private String customerPhone;
+    private AccountsDto accountsDto;
 }

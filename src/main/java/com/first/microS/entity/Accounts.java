@@ -18,7 +18,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Accounts extends BaseEntity{
-    private Long cust_id;
+    @Column(nullable = false)
+    private Long customerId;
     @Id
     @Column(nullable = false)
     private Long account_no;
